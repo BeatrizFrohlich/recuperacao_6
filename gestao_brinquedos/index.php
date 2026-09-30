@@ -62,7 +62,7 @@ try {
                         <td><?php echo $b['quantidade']; ?></td>
                         <td>
                             <a href="editar.php?id=<?php echo $b['id']; ?>">Editar</a> | 
-                            <a href="excluir.php?id=<?php echo $b['id']; ?>">Excluir</a>
+                            <a href="excluir.php?id=<?php echo $b['id']; ?>" Sclass="btn-delete"  onclick="return confirm('Tem certeza que deseja excluir o brinquedo <?php echo $b['nome']; ?>?');"> Excluir</a>
                         </td>
                     </tr>
                 <?php 
